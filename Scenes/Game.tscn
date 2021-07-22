@@ -1,0 +1,443 @@
+[gd_scene load_steps=60 format=2]
+
+[ext_resource path="res://Images/L2.png" type="Texture" id=1]
+[ext_resource path="res://Images/DPad-DOWN.png" type="Texture" id=2]
+[ext_resource path="res://Images/DPad-RIGHT.png" type="Texture" id=3]
+[ext_resource path="res://Images/LStick-UP.png" type="Texture" id=4]
+[ext_resource path="res://Images/L1.png" type="Texture" id=5]
+[ext_resource path="res://Images/RStick-DOWN.png" type="Texture" id=6]
+[ext_resource path="res://Images/R1.png" type="Texture" id=7]
+[ext_resource path="res://Images/F3.png" type="Texture" id=8]
+[ext_resource path="res://Images/Start.png" type="Texture" id=9]
+[ext_resource path="res://Images/Y.png" type="Texture" id=10]
+[ext_resource path="res://Images/F4.png" type="Texture" id=11]
+[ext_resource path="res://Images/RStick-RIGHT.png" type="Texture" id=12]
+[ext_resource path="res://Images/X.png" type="Texture" id=13]
+[ext_resource path="res://Images/backdrop.png" type="Texture" id=14]
+[ext_resource path="res://Images/DPad-LEFT.png" type="Texture" id=15]
+[ext_resource path="res://Images/LStick-DOWN.png" type="Texture" id=16]
+[ext_resource path="res://Images/Overlay.png" type="Texture" id=17]
+[ext_resource path="res://Images/RStick-UP.png" type="Texture" id=18]
+[ext_resource path="res://Images/F2.png" type="Texture" id=19]
+[ext_resource path="res://Images/R2.png" type="Texture" id=20]
+[ext_resource path="res://Images/F1.png" type="Texture" id=21]
+[ext_resource path="res://Images/LStick-LEFT.png" type="Texture" id=22]
+[ext_resource path="res://Images/LStick-RIGHT.png" type="Texture" id=23]
+[ext_resource path="res://Images/Select.png" type="Texture" id=24]
+[ext_resource path="res://Images/A.png" type="Texture" id=25]
+[ext_resource path="res://Images/Pumpkin.png" type="Texture" id=26]
+[ext_resource path="res://Images/B.png" type="Texture" id=27]
+[ext_resource path="res://Images/DPad-UP.png" type="Texture" id=28]
+[ext_resource path="res://Images/RStick-LEFT.png" type="Texture" id=29]
+[ext_resource path="res://Scripts/B.gd" type="Script" id=30]
+[ext_resource path="res://Scripts/A.gd" type="Script" id=31]
+[ext_resource path="res://Scripts/RStick-LEFT.gd" type="Script" id=32]
+[ext_resource path="res://Scripts/F2.gd" type="Script" id=33]
+[ext_resource path="res://Scripts/L1.gd" type="Script" id=34]
+[ext_resource path="res://Scripts/LStick-RIGHT.gd" type="Script" id=35]
+[ext_resource path="res://Scripts/RStick-RIGHT.gd" type="Script" id=36]
+[ext_resource path="res://Scripts/X.gd" type="Script" id=37]
+[ext_resource path="res://Scripts/F3.gd" type="Script" id=38]
+[ext_resource path="res://Scripts/DPad-LEFT.gd" type="Script" id=39]
+[ext_resource path="res://Scripts/F1.gd" type="Script" id=40]
+[ext_resource path="res://Scripts/R2.gd" type="Script" id=41]
+[ext_resource path="res://Scripts/LStick-UP.gd" type="Script" id=42]
+[ext_resource path="res://Scripts/Y.gd" type="Script" id=43]
+[ext_resource path="res://Scripts/F4.gd" type="Script" id=44]
+[ext_resource path="res://Scripts/L2.gd" type="Script" id=45]
+[ext_resource path="res://Scripts/LStick-LEFT.gd" type="Script" id=46]
+[ext_resource path="res://Scripts/DPad-DOWN.gd" type="Script" id=47]
+[ext_resource path="res://Scripts/Start.gd" type="Script" id=48]
+[ext_resource path="res://Scripts/LStick-DOWN.gd" type="Script" id=49]
+[ext_resource path="res://Scripts/Select.gd" type="Script" id=50]
+[ext_resource path="res://Scripts/R1.gd" type="Script" id=51]
+[ext_resource path="res://Scripts/RStick-UP.gd" type="Script" id=52]
+[ext_resource path="res://Scripts/DPad-UP.gd" type="Script" id=53]
+[ext_resource path="res://Scripts/DPad-RIGHT.gd" type="Script" id=54]
+[ext_resource path="res://Scripts/RStick-DOWN.gd" type="Script" id=55]
+[ext_resource path="res://Scripts/Label.gd" type="Script" id=56]
+[ext_resource path="res://Scripts/Axes.gd" type="Script" id=57]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 0.686275, 0.0823529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.682353, 0.682353, 0.682353, 1 )
+
+[node name="Node" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="backdrop" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 14 )
+
+[node name="Overlay" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 17 )
+
+[node name="Pumpkin" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 26 )
+
+[node name="B" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 25 )
+script = ExtResource( 30 )
+
+[node name="A" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 27 )
+script = ExtResource( 31 )
+
+[node name="Y" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 13 )
+script = ExtResource( 43 )
+
+[node name="X" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 10 )
+script = ExtResource( 37 )
+
+[node name="DPad-DOWN" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 2 )
+script = ExtResource( 47 )
+
+[node name="DPad-LEFT" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 15 )
+script = ExtResource( 39 )
+
+[node name="DPad-RIGHT" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 3 )
+script = ExtResource( 54 )
+
+[node name="DPad-UP" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 28 )
+script = ExtResource( 53 )
+
+[node name="F1" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 21 )
+script = ExtResource( 40 )
+
+[node name="F2" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 19 )
+script = ExtResource( 33 )
+
+[node name="F3" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 8 )
+script = ExtResource( 38 )
+
+[node name="F4" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 11 )
+script = ExtResource( 44 )
+
+[node name="L1" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 5 )
+script = ExtResource( 34 )
+
+[node name="L2" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 1 )
+script = ExtResource( 45 )
+
+[node name="LStick-DOWN" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 16 )
+script = ExtResource( 49 )
+
+[node name="LStick-LEFT" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 22 )
+script = ExtResource( 46 )
+
+[node name="LStick-RIGHT" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 23 )
+script = ExtResource( 35 )
+
+[node name="LStick-UP" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 4 )
+script = ExtResource( 42 )
+
+[node name="R1" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 7 )
+script = ExtResource( 51 )
+
+[node name="R2" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 20 )
+script = ExtResource( 41 )
+
+[node name="RStick-DOWN" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 6 )
+script = ExtResource( 55 )
+
+[node name="RStick-LEFT" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 29 )
+script = ExtResource( 32 )
+
+[node name="RStick-RIGHT" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 12 )
+script = ExtResource( 36 )
+
+[node name="RStick-UP" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 18 )
+script = ExtResource( 52 )
+
+[node name="Select" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 24 )
+script = ExtResource( 50 )
+
+[node name="Start" type="Sprite" parent="Control"]
+position = Vector2( 427, 240 )
+texture = ExtResource( 9 )
+script = ExtResource( 48 )
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 222.0
+margin_top = 318.0
+margin_right = 658.0
+margin_bottom = 363.0
+text = "line 1
+line 2"
+script = ExtResource( 56 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Axes" type="Control" parent="."]
+margin_right = 854.0
+margin_bottom = 480.0
+script = ExtResource( 57 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LX" type="Control" parent="Axes"]
+margin_left = 149.0
+margin_top = 296.0
+margin_right = 189.0
+margin_bottom = 336.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LX1" type="ProgressBar" parent="Axes/LX"]
+margin_left = 1.43051e-06
+margin_right = 30.0
+margin_bottom = 14.0
+rect_rotation = -90.0
+rect_scale = Vector2( 1, 0.5 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 0.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LX2" type="ProgressBar" parent="Axes/LX"]
+margin_left = 7.0
+margin_right = 37.0
+margin_bottom = 14.0
+rect_rotation = 90.0
+rect_scale = Vector2( 1, 0.5 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 0.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LX3" type="Label" parent="Axes/LX"]
+margin_left = 9.0
+margin_top = -6.0
+margin_right = 49.0
+margin_bottom = 8.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LY" type="Control" parent="Axes"]
+margin_left = 113.0
+margin_top = 331.0
+margin_right = 153.0
+margin_bottom = 371.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LY1" type="ProgressBar" parent="Axes/LY"]
+margin_left = 7.0
+margin_right = 37.0
+margin_bottom = 14.0
+rect_rotation = 90.0
+rect_scale = Vector2( 1, 0.5 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 0.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LY2" type="ProgressBar" parent="Axes/LY"]
+margin_right = 30.0
+margin_bottom = 14.0
+rect_rotation = -90.0
+rect_scale = Vector2( 1, 0.5 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 0.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LY3" type="Label" parent="Axes/LY"]
+margin_left = 9.0
+margin_top = 3.0
+margin_right = 49.0
+margin_bottom = 17.0
+rect_rotation = -90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RX" type="Control" parent="Axes"]
+margin_left = 720.0
+margin_top = 296.0
+margin_right = 760.0
+margin_bottom = 336.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RX1" type="ProgressBar" parent="Axes/RX"]
+margin_left = 1.43051e-06
+margin_right = 30.0
+margin_bottom = 14.0
+rect_rotation = -90.0
+rect_scale = Vector2( 1, 0.5 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 0.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RX2" type="ProgressBar" parent="Axes/RX"]
+margin_left = 7.0
+margin_right = 37.0
+margin_bottom = 14.0
+rect_rotation = 90.0
+rect_scale = Vector2( 1, 0.5 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 0.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RX3" type="Label" parent="Axes/RX"]
+margin_left = -23.0
+margin_top = -6.0
+margin_right = 17.0
+margin_bottom = 8.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RY" type="Control" parent="Axes"]
+margin_left = 763.0
+margin_top = 331.0
+margin_right = 803.0
+margin_bottom = 371.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RY1" type="ProgressBar" parent="Axes/RY"]
+margin_left = 7.0
+margin_right = 37.0
+margin_bottom = 14.0
+rect_rotation = 90.0
+rect_scale = Vector2( 1, 0.5 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 0.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RY2" type="ProgressBar" parent="Axes/RY"]
+margin_right = 30.0
+margin_bottom = 14.0
+rect_rotation = -90.0
+rect_scale = Vector2( 1, 0.5 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 0.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RY3" type="Label" parent="Axes/RY"]
+margin_left = 9.0
+margin_top = 3.0
+margin_right = 49.0
+margin_bottom = 17.0
+rect_rotation = -90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitInsctructions" type="Label" parent="."]
+margin_left = 545.0
+margin_top = 125.0
+margin_right = 657.0
+margin_bottom = 142.0
+text = "F2 + Start to quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GithubLink" type="Label" parent="."]
+margin_left = 70.0
+margin_top = 433.0
+margin_right = 245.0
+margin_bottom = 464.0
+text = "Project files:
+github.com/Pumpkinwaffle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
