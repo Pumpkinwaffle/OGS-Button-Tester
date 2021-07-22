@@ -1,6 +1,9 @@
 # OGS-Button-Tester
 A Godot project with inputs setup for the Odroid Go Super. Doubles as a button tester.
 
+
+![OGS_Button_Test_screenshot](https://user-images.githubusercontent.com/7241698/126697553-f39889f1-d7d1-4644-b71c-5d8738e8453e.PNG)
+
 ## General info
 This is the example app provided with <a href="https://github.com/Pumpkinwaffle/EmuELEC-OGS-Godot">EmuELEC-OGS-Godot</a>.
 
@@ -8,10 +11,10 @@ I'll have an empty Godot Project template pre configured for the OGS uploaded so
 
 ## Instructions
 #### Make note of the settings in:
-* `Project Settings > general > Window:` width: 480, height:854
+* `Project Settings > general > Window:` width: 480, height: 854
 * `Project Settings > general > audio` Mix Rate: 48000, Output Latency: 20
 * `Project Settings > Input Map` The OGS's button correspond to an Xbox360 controller (only expetion being the function keys)
-* `Project Settings > Autoload` The OGS screen is in portrait, this handles the rotations so you don't have to think about it.
+* `Project Settings > Autoload` The OGS screen is in portrait, this script handles the rotations so you don't have to think about it.
 
 #### Use the `frt_100_332_arm64.bin` as an export template, and export PCK/Zip
 * <https://github.com/efornara/frt>
