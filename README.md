@@ -5,6 +5,8 @@ A Godot project with inputs setup for the Odroid Go Super. Doubles as a button t
 ![OGS_Button_Test_screenshot](https://user-images.githubusercontent.com/7241698/126697553-f39889f1-d7d1-4644-b71c-5d8738e8453e.PNG)
 
 ## General info
+For now when have to deal with OGS screen orientation in Godot. This shouldn't be the case in the long run, so consider this a temporary solution. I'll update everything accordingly once Godot is better integrated in Emuelec.
+
 This is the example app provided with <a href="https://github.com/Pumpkinwaffle/EmuELEC-OGS-Godot">EmuELEC-OGS-Godot</a>.
 
 I'll have an empty Godot Project template pre configured for the OGS uploaded soon. If you need assistance, come to the <a href="https://forum.odroid.com/viewtopic.php?f=193&t=39708&sid=45e9324b1ef05e4651f6a79924689f34">Hardkernel Forums</a>.
